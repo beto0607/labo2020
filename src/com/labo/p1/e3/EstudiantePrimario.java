@@ -7,11 +7,8 @@ public class EstudiantePrimario extends Estudiante {
 	private boolean esRepetidor;
 	
 
-	public EstudiantePrimario(String nombre, String apellido, String legajo, int ausencias, boolean esRepetidor) {
-		super();
-		this.setApellido(apellido);
-		this.setNombre(nombre);
-		this.setLegajo(legajo);
+	public EstudiantePrimario(String apellido, String nombre, String legajo, int ausencias, boolean esRepetidor) {
+		super(apellido, nombre, legajo);
 		this.ausencias = ausencias;
 		this.esRepetidor = esRepetidor;
 	}

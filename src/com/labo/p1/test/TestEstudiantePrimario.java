@@ -8,7 +8,7 @@ public class TestEstudiantePrimario {
 
 	public static void main(String[] args) {
 		EstudiantePrimario estudiantePrimario = 
-				new EstudiantePrimario("nombre1", "apellido1", "legajo1", 10, false);
+				new EstudiantePrimario("apellido1", "nombre1", "legajo1", 10, false);
 		
 		out.println(estudiantePrimario.toString());
 	}

@@ -5,6 +5,14 @@ public class Estudiante {
 	private String nombre;
 	private String legajo;
 	
+	
+	public Estudiante(String apellido, String nombre, String legajo) {
+		super();
+		this.apellido = apellido;
+		this.nombre = nombre;
+		this.legajo = legajo;
+	}
+	
 	public String getApellido() {
 		return apellido;
 	}
@@ -27,10 +35,11 @@ public class Estudiante {
 	@Override
 	public String toString() {
 		StringBuffer stringBuffer = new StringBuffer();
+		stringBuffer.append("Nombre y apellido: ");
 		stringBuffer.append(this.nombre);
 		stringBuffer.append(" ");
 		stringBuffer.append(this.apellido);
-		stringBuffer.append(" - ");
+		stringBuffer.append(" - Legajo: ");
 		stringBuffer.append(this.legajo);
 		return stringBuffer.toString();
 	}

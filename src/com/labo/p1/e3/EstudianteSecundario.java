@@ -8,11 +8,8 @@ public class EstudianteSecundario extends Estudiante {
 	private float promedioActual;
 	
 	
-	public EstudianteSecundario(String nombre, String apellido, String legajo,  int materiasPrevias, float promedioActual) {
-		super();
-		this.setApellido(apellido);
-		this.setNombre(nombre);
-		this.setLegajo(legajo);
+	public EstudianteSecundario(String apellido, String nombre, String legajo,  int materiasPrevias, float promedioActual) {
+		super(apellido, nombre,legajo);
 		this.materiasPrevias = materiasPrevias;
 		this.promedioActual = promedioActual;
 	}
