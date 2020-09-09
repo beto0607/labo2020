@@ -2,7 +2,7 @@ package com.labo.p1.test;
 
 import static java.lang.System.out;
 
-import com.labo.p1.Estudiante;
+import com.labo.p1.e1.Estudiante;
 
 public class TestEstudiante {
 

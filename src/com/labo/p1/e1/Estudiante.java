@@ -1,4 +1,4 @@
-package com.labo.p1;
+package com.labo.p1.e1;
 
 public class Estudiante {
 	private String apellido;

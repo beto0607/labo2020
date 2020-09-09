@@ -1,7 +1,7 @@
 package com.labo.p1.e3;
 
 
-import com.labo.p1.Estudiante;
+import com.labo.p1.e1.Estudiante;
 
 public class EstudianteSecundario extends Estudiante {
 	private int materiasPrevias;

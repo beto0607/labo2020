@@ -2,7 +2,7 @@ package com.labo.p1.e3;
 
 import java.time.LocalDate;
 
-import com.labo.p1.Estudiante;
+import com.labo.p1.e1.Estudiante;
 
 public class EstudianteUniversitario extends Estudiante {
 	private LocalDate fechaIngreso;
