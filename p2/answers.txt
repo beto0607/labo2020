@@ -1,0 +1,3 @@
+1-
+1.a-Las interfaces son correctas. Pero la clase no. "AMARILLO" es ambiguo en ese ambito, puede referirse a ColImpresion o ColArcoIris
+1.b-No son legales, las interfaces no pueden definir el cuerpo de métodos. En este caso, define afinar().
