@@ -5,11 +5,11 @@ import robocode.*;
 // API help : http://robocode.sourceforge.net/docs/robocode/robocode/JuniorRobot.html
 
 
-public class LaboRobot extends JuniorRobot
+public class LaboRobotG30 extends JuniorRobot
 {
 	private RoboStrategy strategy = new DefaultStrategy(this);
 
-	public  LaboRobot(){
+	public LaboRobotG30(){
 		this.strategy = new AggresiveStrategy(this);
 	}
 

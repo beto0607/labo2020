@@ -1,6 +1,6 @@
 package laboratorio.strategies;
 
-import laboratorio.LaboRobot;
+import laboratorio.LaboRobotG30;
 /**
  * The peculiarity of this strategy is that doubles the power every time the robot gets git
  * */
@@ -8,38 +8,36 @@ public class AggresiveStrategy extends RoboStrategy {
     private  int power = 1;
     private  double closestRobotDistance = 100000;
 
-    public AggresiveStrategy(LaboRobot laboRobot) {
-        super(laboRobot);
+    public AggresiveStrategy(LaboRobotG30 laboRobotG30) {
+        super(laboRobotG30);
     }
 
     @Override
     public void run() {
-        while (true) {
-            this.laboRobot.ahead(100);
-            this.laboRobot.turnRight(30);
-            this.laboRobot.ahead(100);
-            this.laboRobot.turnRight(30);
-        }
+        this.laboRobotG30.ahead(100);
+        this.laboRobotG30.turnRight(30);
+        this.laboRobotG30.ahead(100);
+        this.laboRobotG30.turnRight(30);
     }
 
     @Override
     public void onScannedRobot() {
-        if(this.laboRobot.scannedDistance < this.closestRobotDistance){
-            this.closestRobotDistance = this.laboRobot.scannedDistance;
-            this.laboRobot.turnGunTo(this.laboRobot.scannedAngle);
-            this.laboRobot.fire(this.power);
+        if(this.laboRobotG30.scannedDistance < this.closestRobotDistance){
+            this.closestRobotDistance = this.laboRobotG30.scannedDistance;
+            this.laboRobotG30.turnGunTo(this.laboRobotG30.scannedAngle);
+            this.laboRobotG30.fire(this.power);
         }
     }
     @Override
     public void onHitByBullet() {
         this.power *= 2;
-        if(this.power > this.laboRobot.energy ){
-            this.power = this.laboRobot.energy/2;
+        if(this.power > this.laboRobotG30.energy ){
+            this.power = this.laboRobotG30.energy/2;
         }
     }
 
     @Override
     public void onHitWall() {
-        this.laboRobot.turnRight(180);
+        this.laboRobotG30.turnRight(180);
     }
 }

@@ -6,9 +6,9 @@ import  laboratorio.*;
 * Abstract class for modeling strategies, it contains the signature for the different events handlers
 */
 public abstract class RoboStrategy {
-    protected LaboRobot laboRobot;
-    public RoboStrategy(LaboRobot laboRobot) {
-        this.laboRobot = laboRobot;
+    protected LaboRobotG30 laboRobotG30;
+    public RoboStrategy(LaboRobotG30 laboRobotG30) {
+        this.laboRobotG30 = laboRobotG30;
     }
     // Must be overwritten
     public abstract void run();
