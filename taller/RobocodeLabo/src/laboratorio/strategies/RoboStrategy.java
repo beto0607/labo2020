@@ -5,7 +5,7 @@ import  laboratorio.*;
 /*
 * Abstract class for modeling strategies, it contains the signature for the different events handlers
 */
-public abstract class RoboStrategy {
+public abstract class RoboStrategy implements IRoboStrategy{
     protected LaboRobotG30 laboRobotG30;
     public RoboStrategy(LaboRobotG30 laboRobotG30) {
         this.laboRobotG30 = laboRobotG30;
