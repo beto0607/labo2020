@@ -12,7 +12,12 @@ public class MasterStrategist implements IStrategist {
     private IStrategist currentStrategist;
     private List<IStrategist> strategists;
 
+    public static final IStrategist instance = new MasterStrategist();
 
+    private  MasterStrategist(LaboRobotG30 robot){
+
+    }
+    public static IStrategist getInstance(){return MasterStrategist.instance;}
     public MasterStrategist(LaboRobotG30 robot) {
         this.robot = robot;
         this.currentStrategist = new StandByStrategist(this.robot);

@@ -9,7 +9,7 @@ import robocode.*;
 
 public class LaboRobotG30 extends JuniorRobot {
     private IRoboStrategy strategy;
-    private MasterStrategist masterStrategist = new MasterStrategist(this);
+    private final MasterStrategist masterStrategist = MasterStrategist.instance;
 
     public LaboRobotG30() {
         this.strategy = this.masterStrategist.getStrategy();

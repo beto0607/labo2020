@@ -29,6 +29,10 @@ public class Tracker extends Robot {
 	int count = 0; // Keeps track of how long we've
 	// been searching for our target
 	double gunTurnAmt; // How much to turn our gun when searching
+		// Loop forever
+		while (true) {
+			// turn the Gun (looks for enemy)
+			turnGunRight(g
 	String trackName; // Name of the robot we're currently tracking
 
 	/**
